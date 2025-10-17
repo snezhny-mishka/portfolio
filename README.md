@@ -1,0 +1,1 @@
+A personal portfolio website built with Vite, React, and Tailwind CSS to showcase my projects and skills.
