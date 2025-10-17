@@ -1,7 +1,7 @@
 export const AboutSection = () => {
     return (
         <>
-            <section className="mb-5">
+            <section className="mt-5 mb-6">
                 <h1 className="font-open-sans font-bold text-yellow text-xs">ABOUT ME</h1>
                 <div className="group relative">
                     <img
