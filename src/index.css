@@ -23,5 +23,13 @@
     60% { transform: rotate(10deg); }
     100% { transform: rotate(0deg); }
   }
+}
 
+@layer components {
+    .heading-section {
+        color: theme(--color-yellow);
+        font-family: theme(--font-open-sans);
+        font-weight: bold;
+        font-size: small;
+    }
 }
