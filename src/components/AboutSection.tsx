@@ -13,7 +13,6 @@ export const AboutSection = () => {
                     <div className="-z-20 absolute inset-0 bg-yellow group-hover:bg-white m-auto rounded-2xl max-w-3/4 transition translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 duration-300 ease-in-out delay-150"></div>
                 </div>
                 <div className="m-auto pt-5 max-w-3/4">
-                    {/* <h1 className="font-open-sans font-bold text-yellow text-xs">ABOUT ME</h1> */}
                     <article className="text-sm">
                         I started out as an illustrator, and my curiosity about how things work
                         online led me into web development. I bring a creative eye to building

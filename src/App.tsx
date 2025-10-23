@@ -13,10 +13,10 @@ import { ProjectSection } from "./components/ProjectSection";
 //     | typeof faSquareArrowUpRight;
 
 const mgDescription =
-    "An interactive browser game where players match pairs of colored cards.Features include responsive gameboard and card sizing adapting to differentscreen sizes, smooth animations and persistent high scores usingLocalStorage.";
+    "An interactive browser game where players match pairs of colored cards. Features include responsiveness to different screen sizes, animations and persistent high scores.";
 
 const todoDescription =
-    "A task management tool that allows users to add, edit, delete, and rearrange tasks. It includes two lists - To Do and Done - and tasks can be moved seamlessly between them. Data persists across sessions and remains available offline.";
+    "A task management tool that allows users to add, edit, delete, and rearrange tasks. Data persists across sessions and remains available offline.";
 
 const App = () => {
     return (
@@ -26,14 +26,16 @@ const App = () => {
             <AboutSection />
             <ProjectSection
                 title="memory game"
-                imgSrc="./src/assets/mg-screenshot.png"
+                imgSrc="./src/assets/mg-lg-2-no-bg.png"
+                alt="memory game screenshot"
                 description={mgDescription}
                 gitPage="http://github.com"
                 webPage="http://github.com"
             />
             <ProjectSection
                 title="to do app"
-                imgSrc="./src/assets/to-do-app.png"
+                imgSrc="./src/assets/to-do-lg-no-bg.png"
+                alt="to-do app screenshot"
                 description={todoDescription}
                 gitPage="http://github.com"
                 webPage="http://github.com"
