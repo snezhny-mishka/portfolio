@@ -1,7 +1,9 @@
-export const AboutSection = () => {
+import { forwardRef } from "react";
+
+export const AboutSection = forwardRef<HTMLElement, object>((_, ref) => {
     return (
         <>
-            <section className="mt-5 mb-6">
+            <section ref={ref as React.Ref<HTMLElement>} className="mt-5 mb-6">
                 <h1 className="heading-section">ABOUT ME</h1>
                 <div className="group relative">
                     <img
@@ -27,4 +29,4 @@ export const AboutSection = () => {
             </section>
         </>
     );
-};
+});

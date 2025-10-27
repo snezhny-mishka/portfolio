@@ -1,4 +1,4 @@
-//import { useState } from "react";
+import { useRef } from "react";
 import "./App.css";
 import { AboutSection } from "./components/AboutSection";
 import { HeaderSection } from "./components/HeaderSection";
@@ -19,12 +19,25 @@ const todoDescription =
     "A task management tool that allows users to add, edit, delete, and rearrange tasks. Data persists across sessions and remains available offline.";
 
 const App = () => {
+    // const headerRef = useRef<HTMLElement>(null);
+    const aboutRef = useRef<HTMLElement>(null);
+    const projectRef = useRef<HTMLElement>(null);
+
+    const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
+        ref.current?.scrollIntoView({behavior: "smooth"});
+    }
+
+
     return (
         <>
-            <NavBar />
+            <NavBar 
+                onAboutClick={() =>scrollToSection(aboutRef)}
+                onProjectClick={() => scrollToSection(projectRef)}
+            />
             <HeaderSection />
-            <AboutSection />
+            <AboutSection ref={aboutRef}/>
             <ProjectSection
+                ref={projectRef}
                 title="memory game"
                 imgSrc="./src/assets/mg-lg-2-no-bg.png"
                 alt="memory game screenshot"
