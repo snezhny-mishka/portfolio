@@ -4,6 +4,7 @@ import { AboutSection } from "./components/AboutSection";
 import { HeaderSection } from "./components/HeaderSection";
 import { NavBar } from "./components/NavBar";
 import { ProjectSection } from "./components/ProjectSection";
+import { BackToTop } from "./components/BackToTop";
 
 // type Icons =
 //     | typeof faHtml5
@@ -24,18 +25,17 @@ const App = () => {
     const projectRef = useRef<HTMLElement>(null);
 
     const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
-        ref.current?.scrollIntoView({behavior: "smooth"});
-    }
-
+        ref.current?.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <>
-            <NavBar 
-                onAboutClick={() =>scrollToSection(aboutRef)}
+            <NavBar
+                onAboutClick={() => scrollToSection(aboutRef)}
                 onProjectClick={() => scrollToSection(projectRef)}
             />
             <HeaderSection />
-            <AboutSection ref={aboutRef}/>
+            <AboutSection ref={aboutRef} />
             <ProjectSection
                 ref={projectRef}
                 title="memory game"
@@ -53,9 +53,9 @@ const App = () => {
                 gitPage="http://github.com"
                 webPage="http://github.com"
             />
+            <BackToTop />
         </>
     );
 };
 
 export default App;
-
