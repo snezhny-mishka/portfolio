@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHtml5, faCss, faSquareGithub, faJs } from "@fortawesome/free-brands-svg-icons";
 import { faSquareArrowUpRight } from "@fortawesome/free-solid-svg-icons";
-import { forwardRef } from "react";
+import { type Ref } from "react";
 
 type ProjectProps = {
     title: string;
@@ -10,9 +10,10 @@ type ProjectProps = {
     description: string;
     gitPage: string;
     webPage: string;
+    ref?: Ref<HTMLElement>
 };
 
-export const ProjectSection = forwardRef<HTMLElement, ProjectProps>(
+export const ProjectSection = 
     ({
     title,
     imgSrc,
@@ -20,7 +21,8 @@ export const ProjectSection = forwardRef<HTMLElement, ProjectProps>(
     description,
     gitPage,
     webPage,
-}, ref) => {
+    ref
+}: ProjectProps) => {
     return (
         <section className="gap-4 grid grid-cols-6 mx-4 mt-6" ref={ref}>
             <h1 className="col-span-6 mb-8 heading-section">PERSONAL PROJECTS</h1>
@@ -65,4 +67,4 @@ export const ProjectSection = forwardRef<HTMLElement, ProjectProps>(
             </div>
         </section>
     );
-});
+};
