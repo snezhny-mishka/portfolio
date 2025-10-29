@@ -4,7 +4,7 @@ export const AboutSection = (props: ComponentPropsWithRef<"section">) => {
     return (
         <>
             <section {...props} className="mt-5 mb-6">
-                <h1 className="heading-section">ABOUT ME</h1>
+                <h1 className="mb-6 ml-4 heading-section">ABOUT ME</h1>
                 <div className="group relative">
                     <img
                         src="./src/assets/my-portrait.png"
