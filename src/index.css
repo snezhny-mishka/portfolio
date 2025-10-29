@@ -32,4 +32,10 @@
         font-weight: bold;
         font-size: small;
     }
+    .nav-item {
+        cursor: pointer;
+    }
+    .nav-item:hover {
+        transform: scale(1.05);
+    }
 }
