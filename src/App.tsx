@@ -34,7 +34,7 @@ const App = () => {
                 onAboutClick={() => scrollToSection(aboutRef)}
                 onProjectClick={() => scrollToSection(projectRef)}
             />
-            <HeaderSection />
+            <HeaderSection onProjectClick={() => scrollToSection(projectRef)} />
             <AboutSection ref={aboutRef} />
             <ProjectSection
                 ref={projectRef}
