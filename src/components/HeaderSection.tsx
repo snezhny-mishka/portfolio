@@ -1,6 +1,9 @@
 import { faHand } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export const HeaderSection = () => {
+type ProjectLink = {
+    onProjectClick: () => void;
+};
+export const HeaderSection = ({ onProjectClick }: ProjectLink) => {
     return (
         <>
             <section className="flex justify-center items-center py-10">
@@ -18,7 +21,10 @@ export const HeaderSection = () => {
                         I'm a web developer who cares about clarity, good design, and the people
                         behind the screen.
                     </p>
-                    <button className="bg-yellow shadow-sm p-2 border-none rounded-2xl text-black cursor-pointer">
+                    <button
+                        className="bg-yellow shadow-sm p-2 border-none rounded-2xl text-black cursor-pointer"
+                        onClick={onProjectClick}
+                    >
                         my projects
                     </button>
                     <div className="-top-8 left-1/7 absolute bg-black rounded-t-full w-16 h-8"></div>
