@@ -7,20 +7,22 @@ type navProps = {
     onProjectClick: () => void;
 };
 export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
-    const [isMobile, setIsMobile] = useState(false);
-    const mobileMenuRef = useRef<HTMLUListElement | null>(null);
+    const [isOpen, setIsOpen] = useState(false);
+    const mobileMenuRef = useRef<HTMLUListElement>(null);
 
     const toggleMenu = () => {
-        setIsMobile(!isMobile);
+        setIsOpen(!isOpen);
     };
     const handleLinkClick = (callback: () => void) => {
         callback();
-        setIsMobile(false);
+        setIsOpen(false);
     };
 
     useEffect(() => {
-        const handleClickOutside = () => {
-            if (mobileMenuRef.current) setIsMobile(false);
+        const handleClickOutside = (e: MouseEvent | TouchEvent) => {
+            if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target as Node)) {
+                setIsOpen(false)
+            }; 
         };
         document.addEventListener("mousedown", handleClickOutside);
         document.addEventListener("touchstart", handleClickOutside);
@@ -68,7 +70,8 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
                     <FontAwesomeIcon icon={faBars} size="lg" className="py-3 pr-7" />
                 </button>
                 {/* dropdown menu */}
-                {isMobile && (
+                {isOpen && (
+                    // <ul className="top-full right-0 z-50 absolute flex flex-col bg-grey w-2/4" ref={mobileMenuRef}>
                     <ul className="top-full right-0 z-50 absolute flex flex-col bg-grey w-2/4" ref={mobileMenuRef}>
                         <li className="hover:bg-yellow px-4 py-4">
                             <button
