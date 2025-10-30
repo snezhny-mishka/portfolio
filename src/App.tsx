@@ -4,7 +4,7 @@ import { AboutSection } from "./components/AboutSection";
 import { HeaderSection } from "./components/HeaderSection";
 import { NavBar } from "./components/NavBar";
 import { ProjectSection } from "./components/ProjectSection";
-// import { Footer } from "./components/Footer";
+import { Footer } from "./components/Footer";
 import { BackToTop } from "./components/BackToTop";
 
 // type Icons =
@@ -54,7 +54,7 @@ const App = () => {
                 gitPage="http://github.com"
                 webPage="http://github.com"
             />
-            {/* <Footer /> */}
+            <Footer />
             <BackToTop />
         </>
     );
