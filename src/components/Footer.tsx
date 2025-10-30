@@ -1,0 +1,29 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+
+export const Footer = () => {
+    return (
+        <footer className="bg-yellow mt-8">
+            <div className="xs:items-center gap-4 grid grid-cols-1 xs:grid-cols-3 pt-3">
+                <div className="flex justify-center items-center gap-2">
+                    <p className="">Contact me:</p>
+                    <FontAwesomeIcon icon={faEnvelope} className="pt-1" />
+                </div>
+                <div className="flex justify-center items-center gap-2">
+                    <p className="">Socials:</p>
+                    <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                    <FontAwesomeIcon icon={faSquareGithub} size="lg" />
+                </div>
+                <div className="flex flex-col justify-center items-center text-xs">
+                    <p>Build with React + Vite</p>
+                    <p>Designed by me in Figma</p>
+                </div>
+            </div>
+            <div className="flex justify-center items-center gap-2 col-span-6 pt-2 pb-2 text-xs">
+                <FontAwesomeIcon icon={faCopyright} />
+                <p className="">2025 Olga Veikova</p>
+            </div>
+        </footer>
+    );
+};
