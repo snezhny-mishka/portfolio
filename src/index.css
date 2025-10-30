@@ -23,6 +23,8 @@
     60% { transform: rotate(10deg); }
     100% { transform: rotate(0deg); }
   }
+
+    --breakpoint-xs: 37rem;
 }
 
 @layer components {
