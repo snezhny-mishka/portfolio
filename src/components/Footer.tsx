@@ -3,9 +3,9 @@ import { faEnvelope, faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
-    return (
+        return (
         <footer className="bg-yellow mt-8">
-            <div className="xs:items-center gap-4 grid grid-cols-1 xs:grid-cols-3 pt-3">
+            <div className="justify-items-center gap-4 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 pt-3">
                 <div className="flex justify-center items-center gap-2">
                     <p className="">Contact me:</p>
                     <FontAwesomeIcon icon={faEnvelope} className="pt-1" />
@@ -15,7 +15,7 @@ export const Footer = () => {
                     <FontAwesomeIcon icon={faLinkedin} size="lg" />
                     <FontAwesomeIcon icon={faSquareGithub} size="lg" />
                 </div>
-                <div className="flex flex-col justify-center items-center text-xs">
+                <div className="flex flex-col justify-center items-center xs:col-span-2 md:col-span-1 text-xs">
                     <p>Build with React + Vite</p>
                     <p>Designed by me in Figma</p>
                 </div>
