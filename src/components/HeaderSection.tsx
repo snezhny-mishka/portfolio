@@ -17,13 +17,14 @@ export const HeaderSection = ({ onProjectClick }: ProjectLink) => {
                         />
                     </p>
                     <h1 className="font-montserrat text-3xl text-center">I'm Olga Veikova</h1>
-                    <p className="px-6 text-sm">
+                    <p className="px-6 text-sm sm:text-base">
                         I'm a web developer who cares about clarity, good design, and the people
                         behind the screen.
                     </p>
                     <button
                         className="bg-yellow shadow-sm p-2 border-none rounded-2xl text-black cursor-pointer"
                         onClick={onProjectClick}
+                        type="button"
                     >
                         my projects
                     </button>
