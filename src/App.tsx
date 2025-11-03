@@ -7,13 +7,6 @@ import { ProjectSection } from "./components/ProjectSection";
 import { Footer } from "./components/Footer";
 import { BackToTop } from "./components/BackToTop";
 
-// type Icons =
-//     | typeof faHtml5
-//     | typeof faCss
-//     | typeof faSquareGithub
-//     | typeof faJs
-//     | typeof faSquareArrowUpRight;
-
 const mgDescription =
     "An interactive browser game where players match pairs of colored cards. Features include responsiveness to different screen sizes, animations and persistent high scores.";
 
@@ -45,6 +38,7 @@ const App = () => {
                 description={mgDescription}
                 gitPage="http://github.com"
                 webPage="http://github.com"
+                buildWith={["HTML", "CSS", "JavaScript"]}
             />
             <ProjectSection
                 title="to do app"
@@ -53,6 +47,7 @@ const App = () => {
                 description={todoDescription}
                 gitPage="http://github.com"
                 webPage="http://github.com"
+                buildWith={["React", "TailwindCSS"]}
             />
             <Footer />
             <BackToTop />
