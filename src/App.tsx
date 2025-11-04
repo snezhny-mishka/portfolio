@@ -13,6 +13,8 @@ const mgDescription =
 const todoDescription =
     "A task management tool that allows users to add, edit, delete, and rearrange tasks. Data persists across sessions and remains available offline.";
 
+const techStack = ["HTML", "CSS", "TailwindCSS", "JavaScript", "TypeScript", "React"];
+
 const App = () => {
     // const headerRef = useRef<HTMLElement>(null);
     const aboutRef = useRef<HTMLElement>(null);
@@ -29,7 +31,7 @@ const App = () => {
                 onProjectClick={() => scrollToSection(projectRef)}
             />
             <HeaderSection onProjectClick={() => scrollToSection(projectRef)} />
-            <AboutSection ref={aboutRef} />
+            <AboutSection ref={aboutRef} techStack={techStack}/>
             <ProjectSection
                 ref={projectRef}
                 title="memory game"
