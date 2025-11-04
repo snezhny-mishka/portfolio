@@ -4,7 +4,7 @@ import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
         return (
-        <footer className="bg-yellow mt-8">
+        <footer className="bg-yellow mt-6">
             <div className="justify-items-center gap-4 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 pt-3">
                 <div className="flex justify-center items-center gap-2">
                     <p className="">Contact me:</p>
