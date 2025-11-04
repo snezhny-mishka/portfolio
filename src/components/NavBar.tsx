@@ -35,7 +35,7 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
 
     return (
         <>
-            <nav className="relative flex justify-between items-center bg-yellow w-full">
+            <nav className="relative flex justify-between items-center bg-yellow mb-4 w-full">
                 <button type="button">
                     <FontAwesomeIcon
                         icon={faFaceSmile}
@@ -71,7 +71,6 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
                 </button>
                 {/* dropdown menu */}
                 {isOpen && (
-                    // <ul className="top-full right-0 z-50 absolute flex flex-col bg-grey w-2/4" ref={mobileMenuRef}>
                     <ul className="top-full right-0 z-50 absolute flex flex-col bg-grey w-2/4" ref={mobileMenuRef}>
                         <li className="hover:bg-yellow px-4 py-4">
                             <button
