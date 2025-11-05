@@ -41,6 +41,7 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
                         icon={faFaceSmile}
                         size="xl"
                         className="py-3 pl-5 cursor-pointer"
+                        aria-label="Home button"
                     />
                 </button>
                 {/* desktop menu */}
@@ -66,6 +67,7 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
                     type="button"
                     className="md:hidden cursor-pointer"
                     onClick={toggleMenu}
+                    aria-label="Navigation menu"
                 >
                     <FontAwesomeIcon icon={faBars} size="lg" className="py-3 pr-7" />
                 </button>

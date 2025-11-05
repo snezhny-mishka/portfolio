@@ -56,10 +56,10 @@ export const ProjectSection =
                 ))}
             </div>
             <div className="flex col-start-4">
-                <a href={gitPage} target="_blank" className="hover:text-yellow">
+                <a href={gitPage} target="_blank" className="hover:text-yellow" aria-label="Project GitHub page">
                     <FontAwesomeIcon icon={faSquareGithub} size="2x" />
                 </a>
-                <a href={webPage} target="_blank" className="hover:text-yellow">
+                <a href={webPage} target="_blank" className="hover:text-yellow" aria-label="Project website">
                     <FontAwesomeIcon icon={faSquareArrowUpRight} size="2x" />
                 </a>
             </div>

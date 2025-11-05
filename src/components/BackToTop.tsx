@@ -24,7 +24,7 @@ export const BackToTop = () => {
                     onClick={scrollToTop}
                     className="right-6 bottom-6 z-50 fixed flex justify-center items-center bg-black hover:bg-yellow shadow-md rounded-full w-8 h-8 text-white"
                 >
-                    <FontAwesomeIcon icon={faAngleUp} />
+                    <FontAwesomeIcon icon={faAngleUp} aria-label="Back to top"/>
                 </button>
             )}
         </>
