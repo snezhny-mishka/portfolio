@@ -29,7 +29,7 @@
 
 @layer components {
     .heading-section {
-        color: theme(--color-yellow);
+        color: theme(--color-black);
         font-family: theme(--font-open-sans);
         font-weight: bold;
         font-size: small;
