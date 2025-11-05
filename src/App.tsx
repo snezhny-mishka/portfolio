@@ -25,7 +25,7 @@ const App = () => {
     };
 
     return (
-        <>
+        <div>
             <NavBar
                 onAboutClick={() => scrollToSection(aboutRef)}
                 onProjectClick={() => scrollToSection(projectRef)}
@@ -53,7 +53,7 @@ const App = () => {
             />
             <Footer />
             <BackToTop />
-        </>
+        </div>
     );
 };
 
