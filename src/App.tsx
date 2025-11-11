@@ -38,8 +38,8 @@ const App = () => {
                 imgSrc="./src/assets/mg-lg-2-no-bg.png"
                 alt="memory game screenshot"
                 description={mgDescription}
-                gitPage="http://github.com"
-                webPage="http://github.com"
+                gitPage="https://github.com/snezhny-mishka/memory-game"
+                webPage="https://snezhny-mishka.github.io/memory-game/"
                 buildWith={["HTML", "CSS", "JavaScript"]}
             />
             <ProjectSection
@@ -47,8 +47,8 @@ const App = () => {
                 imgSrc="./src/assets/to-do-lg-no-bg.png"
                 alt="to-do app screenshot"
                 description={todoDescription}
-                gitPage="http://github.com"
-                webPage="http://github.com"
+                gitPage="https://github.com/snezhny-mishka/to-do-app-react"
+                webPage="https://snezhny-mishka.github.io/to-do-app-react/"
                 buildWith={["React", "TailwindCSS"]}
             />
             <Footer />
