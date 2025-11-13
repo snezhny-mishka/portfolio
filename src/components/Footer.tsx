@@ -1,14 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faCopyright } from "@fortawesome/free-solid-svg-icons";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import { ContactLink } from "./ContactLink";
+import { type Ref } from "react";
 
-export const Footer = () => {
+type FooterProps = { ref: Ref<HTMLElement> };
+
+export const Footer = ({ ref }: FooterProps) => {
     return (
-        <footer className="bg-yellow mt-6">
+        <footer className="bg-yellow mt-6" ref={ref}>
             <div className="justify-items-center gap-4 grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 pt-3">
                 <div className="flex justify-center items-center gap-2">
                     <p className="">Contact me:</p>
-                    <FontAwesomeIcon icon={faEnvelope} className="pt-1" />
+                    <ContactLink />
                 </div>
                 <div className="flex justify-center items-center gap-2">
                     <p className="">Socials:</p>
