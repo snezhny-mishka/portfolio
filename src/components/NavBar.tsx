@@ -5,8 +5,9 @@ type navProps = {
     // onHeaderClick: () => void;
     onAboutClick: () => void;
     onProjectClick: () => void;
+    onContactClick: () => void;
 };
-export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
+export const NavBar = ({ onAboutClick, onProjectClick, onContactClick }: navProps) => {
     const [isOpen, setIsOpen] = useState(false);
     const mobileMenuRef = useRef<HTMLUListElement>(null);
 
@@ -21,8 +22,8 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent | TouchEvent) => {
             if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target as Node)) {
-                setIsOpen(false)
-            }; 
+                setIsOpen(false);
+            }
         };
         document.addEventListener("mousedown", handleClickOutside);
         document.addEventListener("touchstart", handleClickOutside);
@@ -30,8 +31,8 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
             document.removeEventListener("touchstart", handleClickOutside);
-        }
-    }, [])
+        };
+    }, []);
 
     return (
         <>
@@ -57,7 +58,7 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
                         </button>
                     </li>
                     <li>
-                        <button type="button" className="nav-item-dt">
+                        <button type="button" className="nav-item-dt" onClick={onContactClick}>
                             Contact
                         </button>
                     </li>
@@ -73,7 +74,10 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
                 </button>
                 {/* dropdown menu */}
                 {isOpen && (
-                    <ul className="top-full right-0 z-50 absolute flex flex-col bg-grey w-2/4" ref={mobileMenuRef}>
+                    <ul
+                        className="top-full right-0 z-50 absolute flex flex-col bg-grey w-2/4"
+                        ref={mobileMenuRef}
+                    >
                         <li className="hover:bg-yellow px-4 py-4">
                             <button
                                 onClick={() => handleLinkClick(onAboutClick)}
@@ -93,7 +97,11 @@ export const NavBar = ({ onAboutClick, onProjectClick }: navProps) => {
                             </button>
                         </li>
                         <li className="hover:bg-yellow px-4 py-4">
-                            <button className="nav-item-mob" type="button">
+                            <button
+                                className="nav-item-mob"
+                                type="button"
+                                onClick={() => handleLinkClick(onContactClick)}
+                            >
                                 Contact
                             </button>
                         </li>
