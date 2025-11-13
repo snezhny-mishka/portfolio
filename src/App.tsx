@@ -19,6 +19,7 @@ const App = () => {
     // const headerRef = useRef<HTMLElement>(null);
     const aboutRef = useRef<HTMLElement>(null);
     const projectRef = useRef<HTMLElement>(null);
+    const footerRef = useRef<HTMLElement>(null);
 
     const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
         ref.current?.scrollIntoView({ behavior: "smooth" });
@@ -29,9 +30,10 @@ const App = () => {
             <NavBar
                 onAboutClick={() => scrollToSection(aboutRef)}
                 onProjectClick={() => scrollToSection(projectRef)}
+                onContactClick={() => scrollToSection(footerRef)}
             />
             <HeaderSection onProjectClick={() => scrollToSection(projectRef)} />
-            <AboutSection ref={aboutRef} techStack={techStack}/>
+            <AboutSection ref={aboutRef} techStack={techStack} />
             <ProjectSection
                 ref={projectRef}
                 title="memory game"
@@ -51,7 +53,7 @@ const App = () => {
                 webPage="https://snezhny-mishka.github.io/to-do-app-react/"
                 buildWith={["React", "TailwindCSS"]}
             />
-            <Footer />
+            <Footer ref={footerRef} />
             <BackToTop />
         </div>
     );
