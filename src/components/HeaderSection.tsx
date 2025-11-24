@@ -23,7 +23,7 @@ export const HeaderSection = ({ onProjectClick }: ProjectLink) => {
                         behind the screen.
                     </p>
                     <button
-                        className="bg-yellow shadow-sm px-4 pt-2 pb-3 border-none rounded-2xl text-black cursor-pointer"
+                        className="bg-black hover:bg-yellow shadow-md px-4 pt-2 pb-3 border-none rounded-2xl text-white hover:text-black cursor-pointer"
                         onClick={onProjectClick}
                     >
                         my projects
