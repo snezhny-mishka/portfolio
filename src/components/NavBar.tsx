@@ -37,14 +37,8 @@ export const NavBar = ({ onAboutClick, onProjectClick, onContactClick }: navProp
     return (
         <>
             <nav className="relative flex justify-between items-center bg-yellow mb-4 w-full">
-                <button type="button">
-                    <FontAwesomeIcon
-                        icon={faFaceSmile}
-                        size="xl"
-                        className="py-3 pl-5 cursor-pointer"
-                        aria-label="Home button"
-                    />
-                </button>
+                <FontAwesomeIcon icon={faFaceSmile} size="xl" className="py-3 pl-5" />
+
                 {/* desktop menu */}
                 <ul className="hidden md:flex gap-16 pr-7 font-open-sans">
                     <li>
