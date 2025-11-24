@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faFaceSmile } from "@fortawesome/free-solid-svg-icons";
 import { useState, useRef, useEffect } from "react";
 type navProps = {
-    // onHeaderClick: () => void;
     onAboutClick: () => void;
     onProjectClick: () => void;
     onContactClick: () => void;
