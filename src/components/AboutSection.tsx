@@ -13,7 +13,7 @@ export const AboutSection = ({ ref, techStack }: AboutProps) => {
                 <div className="flex md:flex-row-reverse flex-col md:gap-8 md:px-25">
                     <div className="relative self-center max-w-2/4 md:max-w-2/5 xl:max-w-1/5">
                         <img
-                            src="./src/assets/portrait.JPG"
+                            src="/portfolio/images/portrait.JPG"
                             alt="my photo"
                             className="peer rounded-2xl transition-all translate-x-0 translate-y-0 hover:-translate-x-3 hover:-translate-y-3 duration-300 ease-in-out delay-150"
                         />

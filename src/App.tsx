@@ -36,7 +36,7 @@ const App = () => {
             <ProjectSection
                 ref={projectRef}
                 title="memory game"
-                imgSrc="./src/assets/mg-lg-2-no-bg.png"
+                imgSrc="/portfolio/images/mg-lg-2-no-bg.png"
                 alt="memory game screenshot"
                 description={mgDescription}
                 gitPage="https://github.com/snezhny-mishka/memory-game"
@@ -45,7 +45,7 @@ const App = () => {
             />
             <ProjectSection
                 title="to do app"
-                imgSrc="./src/assets/to-do-lg-no-bg.png"
+                imgSrc="/portfolio/images/to-do-lg-no-bg.png"
                 alt="to-do app screenshot"
                 description={todoDescription}
                 gitPage="https://github.com/snezhny-mishka/to-do-app-react"
