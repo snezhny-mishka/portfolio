@@ -71,7 +71,7 @@ export const NavBar = ({ onAboutClick, onProjectClick, onContactClick }: navProp
                         className="top-full right-0 z-50 absolute flex flex-col bg-grey w-2/4"
                         ref={mobileMenuRef}
                     >
-                        <li className="hover:bg-yellow px-4 py-4">
+                        <li className="hover:bg-yellow active:bg-yellow px-4 py-4">
                             <button
                                 onClick={() => handleLinkClick(onAboutClick)}
                                 className="nav-item-mob"
@@ -80,7 +80,7 @@ export const NavBar = ({ onAboutClick, onProjectClick, onContactClick }: navProp
                                 About Me
                             </button>
                         </li>
-                        <li className="hover:bg-yellow px-4 py-4">
+                        <li className="hover:bg-yellow active:bg-yellow px-4 py-4">
                             <button
                                 onClick={() => handleLinkClick(onProjectClick)}
                                 className="nav-item-mob"
@@ -89,7 +89,7 @@ export const NavBar = ({ onAboutClick, onProjectClick, onContactClick }: navProp
                                 My Projects
                             </button>
                         </li>
-                        <li className="hover:bg-yellow px-4 py-4">
+                        <li className="hover:bg-yellow active:bg-yellow px-4 py-4">
                             <button
                                 className="nav-item-mob"
                                 type="button"

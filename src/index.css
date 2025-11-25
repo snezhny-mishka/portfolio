@@ -37,7 +37,9 @@
     .nav-item-dt {
         cursor: pointer;
     }
-    .nav-item-dt:hover {
+    .nav-item-dt:hover,
+    .nav-item-dt:active
+    {
         transform: scale(1.05);
     }
     .nav-item-mob {
